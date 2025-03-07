@@ -1,0 +1,224 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"app-plus": {
+					"bounce": "none", // 在 App 中禁用下拉弹性效果
+					"titleNView": {
+						"type": "transparent" // 设置标题栏为透明
+					}
+				}
+
+			}
+		}, {
+			"path": "pages/msg/msg",
+			"style": {
+				"navigationBarTitleText": "信息",
+				"navigationBarBackgroundColor": "#1cbbb4",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none", // 在 App 中禁用下拉弹性效果
+					"titleNView": {
+						"buttons": [{
+							"fontSrc": "/static/tianjia.ttf", // 自定义字体图标的路径
+							"text": "\ue620", // 字体图标的 Unicode
+							"fontSize": "28", // 字体大小
+							"color": "#ffff", // 字体颜色
+							"width": "42px", // 按钮宽度
+							"background": "rgba(0,0,0,0)" // 按钮背景色为透明
+						}]
+					}
+				},
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/personage/personage",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none", // 在 App 中禁用下拉弹性效果
+					"titleNView": {
+						"type": "transparent", // 设置标题栏为透明
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf", // 自定义字体图标的路径
+							"text": "\ue658", // 字体图标的 Unicode
+							"fontSize": "28", // 字体大小
+							"color": "#303133", // 字体颜色
+							"width": "42px", // 按钮宽度
+							"background": "rgba(0,0,0,0)" // 按钮背景色为透明
+						}]
+					}
+				},
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#1cbbb4",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+
+			}
+
+		}, {
+			"path": "pages/application/Announce/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/set/about/about",
+			"style": {
+				"navigationBarTitleText": "关于我们",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/set/HelpCenter/HelpCenter",
+			"style": {
+				"navigationBarTitleText": "站点帮助",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/set/userinfo/userinfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/set/password/password",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/application/Announce/addition",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/application/Announce/detail",
+			"style": {
+				"navigationBarTitleText": "添加公告",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"subPackages": [
+		// 设置
+		{
+			"root": "pages/set",
+			"pages": [
+				// 关于
+				{
+					"path": "about/about",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				//帮助
+				{
+					"path": "HelpCenter/HelpCenter",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				//修改密码
+				{
+					"path": "password/password",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				},
+				//个人资料
+				{
+					"path": "userinfo/userinfo",
+					"style": {
+						"navigationBarTitleText": ""
+					}
+				}, {
+					"path": "set",
+					"style": {
+						"navigationBarTitleText": "设置",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "aboutMe",
+					"style": {
+						"navigationBarTitleText": "关于我们",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "register",
+					"style": {
+						"navigationBarTitleText": "注册协议",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "privacy/privacy",
+					"style": {
+						"navigationBarTitleText": "隐私协议",
+						"navigationBarTextStyle": "white",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		}
+
+	],
+	"tabBar": {
+		"color": "#7A7E83", // TabBar默认文字颜色
+		"selectedColor": "#1cbbb4", // TabBar选中后的文字颜色
+		"backgroundColor": "#FFFFFF", // TabBar背景色
+		"borderStyle": "white", // TabBar边框颜色
+		"list": [{
+				"pagePath": "pages/home/home", // 指向消息页面
+				"text": "首页", // TabBar的文本
+				"iconPath": "static/tab/tab-home.png", // TabBar图标路径
+				"selectedIconPath": "static/tab/tab-home-cyan.png" // TabBar选中图标路径
+			},
+			{
+				"pagePath": "pages/msg/msg",
+				"text": "信息",
+				"iconPath": "static/tab/tab-notify.png",
+				"selectedIconPath": "static/tab/tab-notify-cyan.png"
+			}, {
+				"pagePath": "pages/personage/personage", // 指向个人信息页面
+				"text": "我的", // TabBar的文本
+				"iconPath": "static/tab/tab-my.png", // TabBar图标路径
+				"selectedIconPath": "static/tab/tab-my-cyan.png" // TabBar选中图标路径
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#1cbbb4",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
