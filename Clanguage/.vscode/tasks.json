@@ -5,16 +5,16 @@
         {
             "label": "complie",
             "type": "shell",
-            "command": "g++",
+            "command": "gcc",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
-            "presentation": {
-                "reveal": "silent"
-            },
+            // "presentation": {
+            //     "reveal": "silent"
+            // },
             "problemMatcher": "$msCompile",
             "group": {
                 "kind": "build",

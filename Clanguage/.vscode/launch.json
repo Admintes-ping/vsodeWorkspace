@@ -9,18 +9,18 @@
             "type": "cppdbg", //  c/c++类型
             "request": "launch",
             //fileDirname 当前文件所在文件夹绝对路径  fileBasenameNoExtension 当前文件不带后缀的文件名
-            "program": "C:\\Windows\\System32\\cmd.exe", //要运行的文件
-            "args": ["/c","${fileDirname}\\${fileBasenameNoExtension}.exe","&","pause"],
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe", // "C:\\Windows\\System32\\cmd.exe"要运行的文件
+            "args": [],
             "stopAtEntry": false,
             //workspaceFolder 当前workspace文件夹路径   （如D:\cWork）
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
             "miDebuggerPath": "E:\\tool\\mingw64\\bin\\gdb.exe", //gdb程序所在路径，前面的路径就是我们配置环境变量的路径
             "setupCommands": [
                 {
-                    "description": "Enable pretty-printing for gdb",
+                    "description": "Enable pretty-printing",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
