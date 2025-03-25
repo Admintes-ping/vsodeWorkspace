@@ -4,6 +4,13 @@
         "string.h": "c",
         "algorithm": "c",
         "stdlib.h": "c",
-        "conio.h": "c"
-    }
+        "conio.h": "c",
+        "cstddef": "c",
+        "string": "c",
+        "limits": "c",
+        "memory": "c",
+        "new": "c",
+        "type_traits": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
